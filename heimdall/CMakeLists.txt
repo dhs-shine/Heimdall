@@ -46,3 +46,5 @@ add_executable(heimdall ${HEIMDALL_SOURCE_FILES})
 
 target_link_libraries(heimdall PRIVATE pit)
 target_link_libraries(heimdall PRIVATE usb-1.0)
+
+install(TARGETS heimdall RUNTIME DESTINATION bin)

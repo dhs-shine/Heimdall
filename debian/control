@@ -1,0 +1,25 @@
+Source: heimdall-flash
+Section: devel
+Priority: extra
+Maintainer: Donghoon Shin <dhs.shin@samsung.com>
+XSBC-Original-Maintainer: Steve Langasek <vorlon@debian.org>
+Build-Depends: debhelper (>= 9~),
+	libusb-1.0-0-dev (>= 2:1.0.17),
+	qt4-qmake,
+	libqt4-dev,
+	libz-dev,
+	pkg-config,
+Standards-Version: 3.9.4
+Homepage: http://www.glassechidna.com.au/products/heimdall/
+Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/users/vorlon/heimdall/trunk/
+Vcs-Browser: http://anonscm.debian.org/loggerhead/users/vorlon/heimdall/trunk/
+
+Package: heimdall-flash-tizen
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: heimdall
+Replaces: heimdall
+Description: tool for flashing firmware on Samsung Galaxy S devices
+ Heimdall is a tool for flashing firmware (aka ROMs) onto Samsung Galaxy S
+ devices over a USB connection.  It accomplishes this using the same
+ protocol as Odin, Samsung's internal Windows-only firmware updater.
