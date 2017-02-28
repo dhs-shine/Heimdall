@@ -5,10 +5,9 @@ Maintainer: Donghoon Shin <dhs.shin@samsung.com>
 XSBC-Original-Maintainer: Steve Langasek <vorlon@debian.org>
 Build-Depends: debhelper (>= 9~),
 	libusb-1.0-0-dev (>= 2:1.0.17),
-	qt4-qmake,
-	libqt4-dev,
-	libz-dev,
-	pkg-config,
+	zlib1g-dev,
+	build-essential,
+	cmake,
 Standards-Version: 3.9.4
 Homepage: http://www.glassechidna.com.au/products/heimdall/
 Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/users/vorlon/heimdall/trunk/
